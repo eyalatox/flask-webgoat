@@ -24,7 +24,7 @@ def search():
         return render_template("error.html", message=message)
 
 @bp.route("/hardcoded-search")
-def search():
+def hardcoded_search():
     query_param = 'Adele'
     if query_param is None:
         message = "please provide the query parameter"
